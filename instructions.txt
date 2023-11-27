@@ -1,0 +1,16 @@
+when adding a new audio file - make sure its a .wav and then go to this website https://base64.guru/converter/encode/audio and then press copy to take that data
+then go to the breathe.py and change/make
+
+inhaleWavData = base64.urlsafe_b64decode(
+b''
+)
+
+and inside the quotes paste in the data
+and do same for exhale file and data
+
+pyinstaller --onefile --noconsole breathe.py
+
+go to dist
+
+copy exe - not deleting or cut
+then put on to usb
